@@ -1,0 +1,117 @@
+
+body{
+  background-image: url(https://i.pinimg.com/originals/d6/08/c1/d608c1462753f7a24f7e52b0301f9dcb.jpg);
+  margin: 0;
+  padding: 15px;
+}
+h1{
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 2px 5px red;
+  text-transform: capitalize;
+  /* background-position: 0 1.06em; */
+  background-size: 28px 9px;
+  color: blue;
+}
+.listcountry{
+  height: 360px;
+  width: 319px;
+  border-style: dashed double;
+  margin-left: 10%;
+  float: left;
+  background-color: #0A332B;
+  position: relative;
+  display: block;
+  width: 319px;
+  height: 360px;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+
+}
+.searchcountry{
+  height: 360px;
+  width: 319px;
+  border-style: dashed double;
+  margin-right: 10%;
+  float: right;
+  background-color: #0A332B;
+
+}
+.randomcountry{
+  height: 360px;
+  width: 319px;
+  border-style: dashed double;
+  margin-left: 40px;
+  float: left;
+  background-color: #0A332B;
+}
+#rand{
+  padding:15px;
+
+  justify-content: center;
+  display: flex;
+  position:absolute;
+  border-radius: 10px;
+  background-color: #6CB085;
+  padding: 10px;
+  width: 320px;
+
+}
+
+
+select{
+  border-radius: 10px;
+  background-color: #6CB085;
+  padding: 7px;
+  position:absolute;
+
+}
+select:hover{
+  color:#486D3B;
+}
+select::after{
+    content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-color:black transparent transparent transparent;
+    position:absolute;
+    top:9px;
+    right:6px;
+}
+p{
+  justify-content: center;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+#inps{
+  border-radius: 10px;
+  background-color: #6CB085;
+  padding: 7px;
+  color:white;
+  width: 300px;
+  text-transform: full-width;
+  font-size: 15px;
+  font-weight: bold;
+}
+.search1{
+  text-transform: full-width;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7px;
+  color:white;
+  border-top:  1px solid black;
+
+
+
+}
+.search1:hover{
+  border-radius: 2px;
+  color: #F39134;
+  border-bottom: 1px solid black;
+}

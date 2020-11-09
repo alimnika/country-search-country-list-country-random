@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .container{
+        width:70%;
+        margin:100px auto;
+        background:#333;
+        border-radius:6px;
+        overflow:hidden;
+
+      }
+      .container input{
+        background:transparent;
+        border:0;
+        font-size:30px;
+        color:#fff;
+      }
+      .suggestions{
+        border-top: 2px solid grey;
+      }
+      .suggestions div{
+        padding:15px;
+        font-size:20px;
+        color:white;
+        border-top:1px solid #666;
+
+      }
+      .suggestions div:hover{
+        background-color:#999;
+        cursor:pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input  class='searched' type="text" name="" value=""placeholder="Search here...">
+      <div class="suggestions"> </div>
+
+    </div>
+    <script type="text/javascript">
+      var country =[
+        {name:"Afghanistan"},
+        {name:"Albania"},
+        {name:"Algeria"},
+        {name:"Andorra"},
+        {name:"Angola"},
+        {name:"Antigua & Barbuda"},
+        {name:"Argentina"},{name:"Armenia"},
+        {name:"Aruba"},{name:"Australia"},
+        {name:"Austria"},{name:"Azerbaijan"},
+        {name:"Bahamas"},{name:"Bahrain"},{name:"Bangladesh"},{name:"Barbados"},{name:"Belarus"},{name:"Belgium"},{name:"Belize"},{name:"Benin"},{name:"Bermuda"},{name:"Bhutan"},{name:"Bolivia"},{name:"Bosnia & Herzegovina"},{name:"Botswana"},{name:"Brazil"},{name:"British Virgin Islands"},
+    {name:"Brunei"},{name:"Bulgaria"},{name:"Burkina Faso"},{name:"Burundi"},{name:"Cambodia"},{name:"Cameroon"},{name:"Canada"},{name:"Cape Verde"},{name:"Cayman Islands"},{name:"Chad"},{name:"Chile"},{name:"China"},{name:"Colombia"},{name:"Congo"},{name:"Cook Islands"},{name:"Costa Rica"},
+    {name:"Cote D Ivoire"},{name:"Croatia"},{name:"Cuba"},{name:"Cyprus"},{name:"Czech Republic"},{name:"Denmark"},{name:"Djibouti"},{name:"Dominica"},{name:"Dominican Republic"},{name:"Ecuador"},{name:"Egypt"},{name:"El Salvador"},{name:"Equatorial Guinea"},
+    {name:"Estonia"},{name:"Ethiopia"},{name:"Falkland Islands"},{name:"Faroe Islands"},{name:"Fiji"},{name:"Finland"},{name:"France"},{name:"Gabon"},{name:"Gambia"},{name:"Georgia"},{name:"Germany"},{name:"Ghana"},
+    {name:"Gibraltar"},{name:"Greece"},{name:"Greenland"},{name:"Grenada"},{name:"Guam"},{name:"Guatemala"},{name:"Guernsey"},{name:"Guinea"},{name:"Guinea Bissau"},{name:"Guyana"},{name:"Haiti"},{name:"Honduras"},{name:"Hong Kong"},{name:"Hungary"},{name:"Iceland"},{name:"India"},
+    {name:"Indonesia"},{name:"Iran"},{name:"Iraq"},{name:"Ireland"},{name:"Isle of Man"},{name:"Israel"},{name:"Italy"},{name:"Jamaica"},{name:"Japan"},{name:"Jersey"},{name:"Jordan"},{name:"Kazakhstan"},{name:"Kenya"},{name:"Kuwait"},{name:"Kyrgyz Republic"},{name:"Laos"},{name:"Latvia"},
+    {name:"Lebanon"},{name:"Lesotho"},{name:"Liberia"},{name:"Libya"},{name:"Liechtenstein"},{name:"Lithuania"},{name:"Luxembourg"},{name:"Macau"},{name:"Macedonia"},{name:"Madagascar"},{name:"Malawi"},{name:"Malaysia"},{name:"Maldives"},{name:"Mali"},{name:"Malta"},{name:"Mauritania"},
+    {name:"Mauritius"},{name:"Mexico"},{name:"Moldova"},{name:"Monaco"},{name:"Mongolia"},{name:"Montenegro"},{name:"Montserrat"},{name:"Morocco"},{name:"Mozambique"},{name:"Namibia"},{name:"Nepal"},{name:"Netherlands"},{name:"Netherlands Antilles"},{name:"New Caledonia"},
+    {name:"New Zealand"},{name:"Nicaragua"},{name:"Niger"},{name:"Nigeria"},{name:"Norway"},{name:"Oman"},{name:"Pakistan"},{name:"Palestine"},{name:"Panama"},{name:"Papua New Guinea"},{name:"Paraguay"},{name:"Peru"},{name:"Philippines"},{name:"Poland"},{name:"Portugal"},
+    {name:"Puerto Rico"},{name:"Qatar"},{name:"Reunion"},{name:"Romania"},{name:"Russia"},{name:"Rwanda"},{name:"Samoa"},{name:"San Marino"},{name:"Satellite"},{name:"Saudi Arabia"},{name:"Senegal"},{name:"Serbia"},{name:"Seychelles"},
+    {name:"Sierra Leone"},{name:"Singapore"},{name:"Slovakia"},{name:"Slovenia"},{name:"South Africa"},{name:"South Korea"},{name:"South Sudan"},{name:"Spain"},{name:"Sri Lanka"},{name:"St Kitts & Nevis"},{name:"St Lucia"},{name:"St Vincent"},{name:"St. Lucia"},{name:"Sudan"},
+    {name:"Suriname"},{name:"Swaziland"},{name:"Sweden"},{name:"Switzerland"},{name:"Syria"},{name:"Taiwan"},{name:"Tajikistan"},{name:"Tanzania"},{name:"Thailand"},{name:"Timor L'Este"},{name:"Togo"},{name:"Tonga"},{name:"Trinidad & Tobago"},{name:"Tunisia"},
+    {name:"Turkey"},{name:"Turkmenistan"},{name:"Uganda"},{name:"Ukraine"},{name:"United Arab Emirates"},{name:"United Kingdom"},{name:"United States"},{name:"Uruguay"},
+    {name:"Uzbekistan"},{name:"Venezuela"},{name:"Vietnam"},{name:"Virgin Islands (US)"},{name:"Yemen"},{name:"Zambia"},{name:"Zimbabwe"}
+
+        ];
+        var searching=document.querySelector('.searched');
+        var find=document.querySelector('.suggestions');
+
+        searching.addEventListener("keyup",function(){
+          // console.log(searching.value);
+          var input=searching.value;
+          find.innerHTML=" ";
+          var suggestions=country.filter(function(countries){
+            console.log(countries);
+            return countries.name.toLowerCase().startsWith(input);
+          });
+          suggestions.forEach(function(suggested){
+            var div=document.createElement('div')
+            div.innerHTML=suggested.name;
+            find.appendChild(div);
+          });
+          if(input===""){
+            find.innerHTML=" ";
+          }
+
+        });
+
+
+    </script>
+  </body>
+</html>
