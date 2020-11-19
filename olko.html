@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="olko.css">
+  </head>
+  <body>
+      <div class="containers">
+      <div class="inside">
+
+
+      <div class="search">
+       <input id="searchIn"   type="text" name="" value=""placeholder="Searchin...">
+       </div>
+       <div class="listCountry">
+         <ul>
+             <li>Kyrgyzstan</li>
+
+           </ul>
+
+
+      </div>
+      <div class="random">
+         <input class='randomIn' type="text" name="" value="">
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+    var countryList = [
+  "Afghanistan",
+  "Åland Islands",
+  "Albania",
+  "Algeria",
+  "Azerbaijan",
+  "Bahamas (the)",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Bouvet Island",
+  "Brazil",
+  "British Indian Ocean Territory (the)",
+  "Brunei Darussalam",
+  "Bulgaria",
+  "Chile",
+  "China",
+  "Christmas Island",
+  "Cocos (Keeling) Islands (the)",
+  "Colombia",
+  "Comoros (the)",
+  "Congo (the Democratic Republic of the)",
+  "Congo (the)",
+  "Cook Islands (the)",
+  "Costa Rica",
+  "Croatia",
+  "Cuba",
+  "Dominican Republic (the)",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Kyrgyzstan",
+  "Lao People's Democratic Republic (the)",
+  "Latvia",
+  "Lebanon",
+  "Lesotho",
+  "United Arab Emirates (the)",
+  "United Kingdom of Great Britain and Northern Ireland (the)",
+  "United States Minor Outlying Islands (the)",
+  "United States of America (the)",
+
+];
+
+  var input=document.getElementById('searchIn');
+  var listed=document.querySelector('.listCountry');
+  input.addEventListener('keyup',function(){
+    console.log(input);
+    var docu=input.value;
+    var ffff=[];
+    for(var i=0;i<countryList.length;i++){
+
+
+
+      }
+
+
+  //   var type=input;
+  //   listed.innerHTML="";
+  //   var listCountry=countryList.filter(function(please){
+  //     console.log
+  //     return please.toLowerCase().startsWith(type);
+  //
+  // });
+  //
+  // listCountry.forEach(function(countryList){
+  //     var hope=document.createElement('ul');
+  //     listcountry.innerHTML=countryList;
+  //     listed.appendChild(hope);
+  // });
+});
+
+// };
+// var searching=document.querySelector('#inps');
+// var find=document.querySelector('.search1');
+//
+// searching.addEventListener("keyup",function(){
+//   // console.log(searching.value);
+//   var input=searching.value;
+//   find.innerHTML=" ";
+//   var search1=country.filter(function(countries){
+//     // console.log(countries);
+//     return countries.name.toLowerCase().startsWith(input);
+//   });
+//   console.log('bye')
+//   search1.forEach(function(suggested){
+//     var div=document.createElement('ul');
+//     div.innerHTML=suggested.name;
+//     find.appendChild(div);
+//   });
+//   if(input===""){
+//     find.innerHTML=" ";
+//   }
+//
+// });
+var country = [
+{name:"Afghanistan"},
+{name:"Albania"},
+{name:"Algeria"},
+{name:"Andorra"},
+{name:"Angola"},
+{name:"Antigua & Barbuda"},
+{name:"Argentina"},{name:"Armenia"},
+{name:"Aruba"},{name:"Australia"},
+{name:"Austria"},{name:"Azerbaijan"},
+{name:"Bahamas"},{name:"Bahrain"},{name:"Bangladesh"},{name:"Barbados"},{name:"Belarus"},{name:"Belgium"},{name:"Belize"},{name:"Benin"},{name:"Bermuda"},{name:"Bhutan"},{name:"Bolivia"},{name:"Bosnia & Herzegovina"},{name:"Botswana"},{name:"Brazil"},{name:"British Virgin Islands"},
+{name:"Brunei"},{name:"Bulgaria"},{name:"Burkina Faso"},{name:"Burundi"},{name:"Cambodia"},{name:"Cameroon"},{name:"Canada"},{name:"Cape Verde"},{name:"Cayman Islands"},{name:"Chad"},{name:"Chile"},{name:"China"},{name:"Colombia"},{name:"Congo"},{name:"Cook Islands"},{name:"Costa Rica"},
+{name:"Cote D Ivoire"},{name:"Croatia"},{name:"Cuba"},{name:"Cyprus"},{name:"Czech Republic"},{name:"Denmark"},{name:"Djibouti"},{name:"Dominica"},{name:"Dominican Republic"},{name:"Ecuador"},{name:"Egypt"},{name:"El Salvador"},{name:"Equatorial Guinea"},
+{name:"Estonia"},{name:"Ethiopia"},{name:"Falkland Islands"},{name:"Faroe Islands"},{name:"Fiji"},{name:"Finland"},{name:"France"},{name:"Gabon"},{name:"Gambia"},{name:"Georgia"},{name:"Germany"},{name:"Ghana"},
+{name:"Gibraltar"},{name:"Greece"},{name:"Greenland"},{name:"Grenada"},{name:"Guam"},{name:"Guatemala"},{name:"Guernsey"},{name:"Guinea"},{name:"Guinea Bissau"},{name:"Guyana"},{name:"Haiti"},{name:"Honduras"},{name:"Hong Kong"},{name:"Hungary"},{name:"Iceland"},{name:"India"},
+{name:"Indonesia"},{name:"Iran"},{name:"Iraq"},{name:"Ireland"},{name:"Isle of Man"},{name:"Israel"},{name:"Italy"},{name:"Jamaica"},{name:"Japan"},{name:"Jersey"},{name:"Jordan"},{name:"Kazakhstan"},{name:"Kenya"},{name:"Kuwait"},{name:"Kyrgyzstan"},{name:"Laos"},{name:"Latvia"},
+{name:"Lebanon"},{name:"Lesotho"},{name:"Liberia"},{name:"Libya"},{name:"Liechtenstein"},{name:"Lithuania"},{name:"Luxembourg"},{name:"Macau"},{name:"Macedonia"},{name:"Madagascar"},{name:"Malawi"},{name:"Malaysia"},{name:"Maldives"},{name:"Mali"},{name:"Malta"},{name:"Mauritania"},
+{name:"Mauritius"},{name:"Mexico"},{name:"Moldova"},{name:"Monaco"},{name:"Mongolia"},{name:"Montenegro"},{name:"Montserrat"},{name:"Morocco"},{name:"Mozambique"},{name:"Namibia"},{name:"Nepal"},{name:"Netherlands"},{name:"Netherlands Antilles"},{name:"New Caledonia"},
+{name:"New Zealand"},{name:"Nicaragua"},{name:"Niger"},{name:"Nigeria"},{name:"Norway"},{name:"Oman"},{name:"Pakistan"},{name:"Palestine"},{name:"Panama"},{name:"Papua New Guinea"},{name:"Paraguay"},{name:"Peru"},{name:"Philippines"},{name:"Poland"},{name:"Portugal"},
+{name:"Puerto Rico"},{name:"Qatar"},{name:"Reunion"},{name:"Romania"},{name:"Russia"},{name:"Rwanda"},{name:"Samoa"},{name:"San Marino"},{name:"Satellite"},{name:"Saudi Arabia"},{name:"Senegal"},{name:"Serbia"},{name:"Seychelles"},
+{name:"Sierra Leone"},{name:"Singapore"},{name:"Slovakia"},{name:"Slovenia"},{name:"South Africa"},{name:"South Korea"},{name:"South Sudan"},{name:"Spain"},{name:"Sri Lanka"},{name:"St Kitts & Nevis"},{name:"St Lucia"},{name:"St Vincent"},{name:"St. Lucia"},{name:"Sudan"},
+{name:"Suriname"},{name:"Swaziland"},{name:"Sweden"},{name:"Switzerland"},{name:"Syria"},{name:"Taiwan"},{name:"Tajikistan"},{name:"Tanzania"},{name:"Thailand"},{name:"Timor L'Este"},{name:"Togo"},{name:"Tonga"},{name:"Trinidad & Tobago"},{name:"Tunisia"},
+{name:"Turkey"},{name:"Turkmenistan"},{name:"Uganda"},{name:"Ukraine"},{name:"United Arab Emirates"},{name:"United Kingdom"},{name:"United States"},{name:"Uruguay"},
+{name:"Uzbekistan"},{name:"Venezuela"},{name:"Vietnam"},{name:"Virgin Islands (US)"},{name:"Yemen"},{name:"Zambia"},{name:"Zimbabwe"}
+
+];
+/   var filterArray=init.value;
+//   filterArray="Vanuatu";
+//   var checked=country.filter(function(item){
+//     item===filterArray.value;
+//     console.log(checked);
+//   });
+//   console.log(filterArray);
+//   for( var i=0;i<checked.length;i++){
+//     var list= li.createElement('li');
+//     list.innerHTML=item[i];
+//     olko.appendChild(li);
+//   };
+// });
+
+// function filter(country){
+//   search=init.value.toLowerCase();
+//   var div =document.createElement('ul')
+//
+//   olko.forEach(function(lis){
+//     div=lis.innerHTML.toLowerCase();
+//     found=div.indexOf(search)
+//     if(search==" "){
+//       lis.style.display='block';
+//     }else if(found==-1){
+//       lis.style.display='none';
+//     }else{
+//       lis.style.display='block';
+//     };
+//   });
+// };
+// var randomOut=document.querySelector('#out');
+// var our=document.querySelector('.ourRandom')
+// var newList=randomList(country);
+//
+// // randomOut.addEventListener('click',function(){
+//   console.log('h')
+//   // function randomList(country){
+//   //   var newPos;
+//   //   var temp;
+//   //  for(var i=country.length-1; i>0;i--){
+//   //      newPos=Math.floor(Math.random()*(i+1));
+//   //      temp=country[i];
+//   //      country[i]=country[newPos];
+//   //      country[newPos]=temp;
+//   //    };
+//   //    return country;
+//   //
+//   // };
+//   // var newList=randomList(country);
+//
+//   // function randomizeList(){
+//   //   var list=document.getElementById('randList');
+//   //   our.innerHTML=list;
+//   //   var word=list.children,i=0;
+//   //   word=Array.prototype.slice.call(word);
+//   //   word=randomList(word);
+//   //   while(i<word.length){
+//   //     list.appendChild(word[i]);
+//   //     ++i;
+//   //   }
+//   //   list.style.display='block';
+//   //   list.innerHTML=newlist;
+//   // };
+//
+//
+//
+//
+//
+//   function randomList(rrr){
+//     // document.getElementById('out').innerHTML= newList;
+//
+//     console.log('h')
+//     var newPos;
+//     var temp;
+// for(var i=rrr.length-1; i>0;i--){
+//     li.createElement('li')
+//     li.innerHTML=rrr[i];
+//     ul.appendChild(li);
+//     newPos=Math.floor(Math.random()*(i+1));
+//     temp=rrr[i];
+//     rrr[i]=rrr[newPos];
+//     rrr[newPos]=temp;
+//   }
+//   return rrr;
+//
+// };
+// var newList=randomList(country);5
+//     var li=document.createElement('li');
+// document.querySelector('.ourRandom').innerHTML=newList;
+//     var uls=document.createElement('ul');
+//     uls.appendChild(li);
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

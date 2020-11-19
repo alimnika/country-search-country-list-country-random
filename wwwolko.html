@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="wwwwolko.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="inside">
+        <div class="searchDiv">
+          <button  id="inin" type="button" name="button" ></button>
+            <ul class='olko'>
+            <!-- <li class='lis '>Kyrgyzstan</li>
+            <li class='lis'>Russia</li>
+            <li class='lis'>Costa Rica</li>
+            <li class='lis'>United States</li>
+            <li class='lis'>Japan</li>
+            <li class='lis'>UAE</li>
+            <li class='lis'>Kazakstan</li>
+            <li class='lis'>Austria</li>
+            <li class='lis'>Sweden</li>
+            <li class='lis'>South Africa</li>
+            <li class='lis'>Turkey</li>
+            <li class='lis'>Azerbaijan</li>
+            <li class='lis'>Myanmar</li>
+            <li class='lis'>Nepal</li>
+            <li class='lis'>Guatemala</li> -->
+
+
+          </ul>
+
+        </div>
+        <div class="random">
+
+          <input id="out" type="search" name="" value="" placeholder="SearchIn">
+          <ul class=ourRandom>
+
+            <li id='randList'>Afghanistan</li>
+            <li id='randList'>Australia</li>
+            <li id='randList' >Argentina</li>
+            <li id='randList'>Bahrain</li>
+            <li id='randList'>Belgium</li>
+            <li id='randList'>Cameroon</li>
+            <li id='randList'>Costa Rica</li>
+            <li id='randList'>China</li>
+            <li id='randList'>Dominica</li>
+            <li id='randList'>Egypt</li>
+            <li id='randList'>Finland</li>
+            <li id='randList'>Germany</li>
+            <li id='randList'>Hong Kong</li>
+            <li id='randList'>India</li>
+            <li id='randList'>Italy</li>
+            <li id='randList'>Jamaica</li>
+            <li id='randList'>Jordan</li>
+            <li id='randList'>Kyrgyzstan</li>
+            <li id='randList'>Kenya</li>
+            <li id='randList' >Lebanon</li>
+            <li id='randList'>Macao</li>
+            <li id='randList'>Malaysia</li>
+            <li id='randList'>Mexico</li>
+            <li id='randList'>New Zealand</li>
+            <li id='randList'>Oman</li>
+            <li id='randList'>Russia</li>
+            <li id='randList'>Peru</li>
+            <li id='randList'>Portugal</li>
+            <li id='randList'>Turkey</li>
+            <li id='randList'>Switzerland</li>
+            <li id='randList'>Spain</li>
+            <li id='randList'>United Arab Emirates</li>
+            <li id='randList'>United States</li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+
+//   var country = [{name:"Afghanistan"},{name:"Albania"}, {name:"Algeria"}, {name:"Andorra"},{name:"Angola"},  {name:"Australia"},{name:"Austria"},{name:"Azerbaijan"},
+//   {name:"Bahamas"},{name:"Bahrain"},{name:"Bangladesh"},{name:"Belarus"},{name:"Belgium"},{name:"Benin"},{name:"Bhutan"},{name:"Bolivia"},{name:"Brazil"},
+//   {name:"Brunei"},{name:"Bulgaria"},{name:"Burundi"},{name:"Cambodia"},{name:"Cameroon"},{name:"Canada"},{name:"China"},{name:"Colombia"},
+//   {name:"Congo"},{name:"Cook Islands"},{name:"Costa Rica"},
+//   {name:"Croatia"},{name:"Cuba"},{name:"Denmark"},{name:"Djibouti"},{name:"Dominica"},{name:"Ecuador"},{name:"Egypt"},
+//   {name:"Estonia"},{name:"Ethiopia"},{name:"Finland"},{name:"France"},{name:"Georgia"},{name:"Germany"},{name:"Ghana"},
+//   {name:"Indonesia"},{name:"Iran"},{name:"Iraq"},{name:"Ireland"},{name:"Israel"},{name:"Italy"},{name:"Jamaica"},{name:"Japan"},{name:"Jordan"},{name:"Kazakhstan"},
+//   {name:"Kenya"},{name:"Kuwait"},{name:"Kyrgyzstan"},{name:"Laos"},{name:"Latvia"},
+//   {name:"Lebanon"},{name:"Lesotho"},{name:"Liberia"},{name:"Libya"},{name:"Lithuania"},{name:"Luxembourg"},{name:"Macedonia"},{name:"Madagascar"},{name:"Malawi"},{name:"Malaysia"},
+// {name:"Mexico"},{name:"Moldova"},{name:"Mongolia"},{name:"Morocco"},{name:"Namibia"},{name:"Nepal"},{name:"Netherlands"},
+//   {name:"New Zealand"},{name:"Nicaragua"},{name:"Niger"},{name:"Nigeria"},{name:"Oman"},{name:"Pakistan"},{name:"Palestine"},{name:"Panama"},{name:"Paraguay"},{name:"Peru"},
+//   {name:"Philippines"},{name:"Poland"},{name:"Portugal"},
+//   {name:"Puerto Rico"},{name:"Qatar"},{name:"Romania"},{name:"Russia"},{name:"Samoa"},{name:"San Marino"},{name:"Saudi Arabia"},{name:"Serbia"},
+//   {name:"Sierra Leone"},{name:"Singapore"},{name:"Slovakia"},{name:"Slovenia"},{name:"South Africa"},{name:"South Korea"},{name:"South Sudan"},{name:"Spain"},{name:"Sri Lanka"},
+//   {name:"Suriname"},{name:"Swaziland"},{name:"Sweden"},{name:"Switzerland"},{name:"Syria"},{name:"Taiwan"},{name:"Tajikistan"},{name:"Tanzania"},{name:"Thailand"},
+//   {name:"Trinidad & Tobago"},{name:"Tunisia"},
+//   {name:"Turkey"},{name:"Turkmenistan"},{name:"Uganda"},{name:"Ukraine"},{name:"United Arab Emirates"},{name:"United Kingdom"},{name:"United States"},{name:"Uruguay"},
+//   {name:"Uzbekistan"},{name:"Venezuela"},{name:"Vietnam"},{name:"Yemen"},{name:"Zambia"},{name:"Zimbabwe"}
+//
+//   ];
+//
+//     var uls=document.querySelector(".olko");
+//     function setList(group){
+//       clearList();
+//       for (var list of group){
+//         var item=document.createElement('li');
+//         var text=document.createTextNode(list.name);
+//         item.appendChild(text);
+//         uls.appendChild(item);
+//       }
+//       if(group.length===0){
+//         setNoResults();
+//       }
+//     }
+//     function clearList(){
+//       while(uls.firstChild){
+//         uls.removeChild(uls.firstChild);
+//       }
+//     }
+//
+//     function displayOut(value,searchTerm ){
+//       if(value===searchTerm){
+//         return 2;
+//       }
+//     }
+//
+//   var search=document.querySelector('#inin');
+//
+//   search.addEventListener('input',function(event){
+//     console.log('type')
+//     var val=event.target.value;
+//       if(val && val.trim().length>0){
+//         val=val.trim().toLowerCase();
+//         setList(country.filter(function(lis){
+//           return lis.name.includes(val);
+//         }));
+//       }else{
+//         clearList()
+//       }
+//
+//   });
+//   var random =document.querySelector("#out");
+//   var  result=document.querySelector('.ourRandom');
+//   random.addEventListener('click',function(){
+//     console.log('jo')
+//     var apple= function (country){
+//       var keyss =Object.values(country).length;
+//       var doc=Math.floor(Math.random()*keyss.length);
+//       console.log(Object.values(country));
+//       result.innerHTML=doc.length;
+//
+//
+//     // var output=Math.floor(Math.random()*Object.values(country).length);
+//     // console.log(output);
+//
+//
+//   };
+// });
+var countryList = [
+"Afghanistan",
+"Australia",
+"Argentina",
+"Bahrain",
+"Belguim",
+"Cameroon",
+"Costa Rica",
+"China",
+"Dominica",
+"Egypt",
+"Finland",
+"Germany",
+"Hong Kong",
+"India",
+"Italy",
+"Jamaica",
+"Jordan",
+"Kyrgyzstan",
+"Kenya",
+"Lebanon",
+"Macao",
+"Malaysia",
+"Mexico",
+"New Zealand",
+"Oman",
+"Russia",
+"Peru",
+"Turkey",
+"Switzerland",
+"Spain",
+"United Arab Emirates",
+"United States",
+
+];
+
+ var init=document.querySelector("#inin");
+ // var olkom=document.querySelector('olko');
+
+ init.addEventListener('click',function(){
+   console.log('You type something');
+// var randoms=Math.floor(Math.random()*countryList.length);
+// olkom.innerHTML=randoms;
+});
+    var  ul=document.querySelector(".olko");
+   countryList.filter((i) => {
+
+     var newDiv=document.createElement('li');
+     newDiv.innerHTML=i;
+     ul.appendChild(newDiv);
+
+
+   });
+
+var second =document.querySelector('#out');
+var filt=document.querySelectorAll('#randList');
+
+second.addEventListener('input',filter)
+  console.log('iii')
+    function filter(countryList){
+      var search=second.value.toLowerCase();
+      var div =document.createElement('ul')
+      console.log(search);
+      filt.forEach(function(lis){
+        div=lis.innerHTML.toLowerCase();
+        found=div.indexOf(search)
+        if(search==" "){
+          lis.style.display='block';
+        }else if(found==-1){
+          lis.style.display='none';
+        }else{
+          lis.style.display='block';
+        };
+      });
+    };
+
+
+
+
+
+</script>
+  </body>
+</html>
